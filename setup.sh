@@ -45,27 +45,6 @@ else
   echo "aborted installation"
 fi
 
-read -p "add 7-1 sass sturcture (y/n): " _input_sass
-if [ $_input_sass == "y" ]  || [ -z "$_input_sass" ]
-then
-  echo "clone 7-1"
-  git clone https://github.com/HugoGiraudel/sass-boilerplate.git
-
-  if [ -d "./sass-boilerplate" ]
-  then
-    echo "move sass-boilerplate to public/sass"
-    mv ./public/sass/ ./public/sass.bcp
-    mv ./sass-boilerplate/stylesheets ./public/sass
-    rm -rf ./sass-boilerplate
-
-  else
-    echo "sass-boilerplate does not exist or there is already a public/sass directory"
-  fi
-
-else
-  echo "aborted cloning 7-1"
-fi
-
 read -p "commit installed project (y/n): " _input_git
 if [ $_input_git == "y" ] || [ -z "$_input_git" ]
 then
