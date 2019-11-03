@@ -1,4 +1,4 @@
-# node sass boilerplate
+# generic design system
 
 1. This boilerplate uses:
   * nvm
