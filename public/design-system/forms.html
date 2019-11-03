@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Roboto:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/main.js"></script>
+        
+        <title>Generic Design System | MIG</title>
+    </head>
+    <body>
+        <div data="MIG-navigation"></div>
+        <div class="outer-wrapper">
+            <div data="MIG-header"></div>
+            <div class="container">
+                <div class="container-inner">
+                    <h1>Webforms</h1>
+                </div>
+                <div class="container-inner">
+                    <h2>Webform</h2>
+                    <div class="form__group">
+                        <legend class="form__label">Title:</legend>
+                        <div class="form__element--chekbox-wrapper">
+                            <input type="radio" name="title" id="title-mr" value="Mr."><label for="title-mr" class="form__label form__label--option">Mr.</label>
+                        </div>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="radio" name="title" id="title-ms" value="Ms."><label for="title-ms" class="form__label form__label--option">Ms.</label>
+                        </div>
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="radio" name="title" id="title-mss" value="Mss."><label for="title-mss" class="form__label form__label--option">Mss.</label>
+                        </div>
+                    </div>                   
+                    <div class="form__group">
+                        <label for="first-name" class="form__label">First name:</label><input type="text" name="first-name" id="" class="form__element"> 
+                    </div>
+                    <div class="form__group">
+                        <label for="name" class="form__label">Name:</label><input type="text" name="name" id="" class="form__element">
+                    </div>
+                    <div class="form__group">
+                        <label for="choice-select" class="form__label">Choose</label>
+                        <select name="choice" id="choice-select" class="form__element form__element--select">
+                            <option value="first">First Value</option>
+                            <option value="second" selected>Second Value</option>
+                            <option value="third">Third Value</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <legend class="form__label">Interested in:</legend>
+                        <div class="form__group--container">
+                            <div class="form__element--chekbox-wrapper">
+                                <input type="checkbox" name="interestedin" id="interestedin-consulting" value="consulting"><label for="interestedin-consulting" class="form__label form__label--option">Consulting</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">
+                                <input type="checkbox" name="interestedin" id="interestedin-audit" value="audit"><label for="interestedin-audit" class="form__label form__label--option">Audit</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">
+                                <input type="checkbox" name="interestedin" id="interestedin-design" value="design"><label for="interestedin-design" class="form__label form__label--option">Design</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">   
+                                <input type="checkbox" name="interestedin" id="interestedin-ux" value="UX"><label for="interestedin-ux" class="form__label form__label--option">UX</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">   
+                                <input type="checkbox" name="interestedin" id="interestedin-programming" value="programming"><label for="interestedin-programming" class="form__label form__label--option">Programming</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="checkbox" name="gdpr" id="gdpr" value="allow-contact"><label for="gdpr" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        </div>
+                    </div> 
+                    <h2>Webform - stacked labels</h2>
+                    <div class="form__group form__group--stacked">
+                        <legend class="form__label">Title:</legend>
+                        <div class="form__group--container">
+                            <div class="form__element--chekbox-wrapper"> 
+                                <input type="radio" name="title" id="title-mr-2" value="Mr."><label for="title-mr-2" class="form__label form__label--option">Mr.</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">
+                                <input type="radio" name="title" id="title-ms-2" value="Ms."><label for="title-ms-2" class="form__label form__label--option">Ms.</label>
+                            </div>
+                            <div class="form__element--chekbox-wrapper">
+                                <input type="radio" name="title" id="title-mss-2" value="Mss."><label for="title-mss-2" class="form__label form__label--option">Mss.</label>                            
+                            </div>
+                        </div>
+
+                    </div>                   
+                    <div class="form__group form__group--stacked">
+                        <label for="first-name" class="form__label">First name:</label><input type="text" name="first-name" id="" class="form__element"> 
+                    </div>
+                    <div class="form__group form__group--stacked">
+                        <label for="name" class="form__label">Name:</label><input type="text" name="name" id="" class="form__element">
+                    </div> 
+                    <div class="form__group form__group--stacked">
+                        <legend class="form__label">Interested in:</legend>
+                        <div class="form__group--container form__group--container-stacked">
+                            <div class="form__element--chekbox-wrapper"> 
+                                <input type="checkbox" name="interestedin" id="interestedin-consulting-2" value="consulting"><label for="interestedin-consulting-2" class="form__label form__label--option">Consulting</label><br>
+                            </div>
+                            <div class="form__element--chekbox-wrapper"> 
+                                <input type="checkbox" name="interestedin" id="interestedin-audit-2" value="audit"><label for="interestedin-audit-2" class="form__label form__label--option">Audit</label><br>
+                            </div>
+                            <div class="form__element--chekbox-wrapper"> 
+                                <input type="checkbox" name="interestedin" id="interestedin-design-2" value="design"><label for="interestedin-design-2" class="form__label form__label--option">Design</label><br>
+                            </div>
+                            <div class="form__element--chekbox-wrapper"> 
+                                <input type="checkbox" name="interestedin" id="interestedin-ux-2" value="UX"><label for="interestedin-ux-2" class="form__label form__label--option">UX</label><br>
+                            </div>
+                            <div class="form__element--chekbox-wrapper"> 
+                                <input type="checkbox" name="interestedin" id="interestedin-programming-2" value="programming"><label for="interestedin-programming-2" class="form__label form__label--option">Programming</label>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="form__group">
+                        <div class="form__element--chekbox-wrapper"> 
+                            <input type="checkbox" name="gdpr" id="gdpr-2" value="allow-contact"><label for="gdpr-2" class="form__label form__label--option">Keep me informed. Please mister Spamalot.</label>
+                        </div>
+                    </div>                                     
+                    <input type="submit" value="Submit" class="button button--solid"><input type="reset" value="Reset" class="button">
+                </div>
+            </div>
+            <div data="MIG-footer"></div>
+        </div>
+
+
+    </body>
+</html>
