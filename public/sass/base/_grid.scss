@@ -1,6 +1,17 @@
 .outer-wrapper {
   //margin: 0 auto;
   //max-width: $container-width;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & main {
+    flex: 1 0 auto;
+  }
+
+  & footer {
+    flex-shrink: 0;
+  }
 }
 
 .container{

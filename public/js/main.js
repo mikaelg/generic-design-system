@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const  partials = (partial, addfunction=null) => {
     let path = "/partials/";
     let extention = ".html";
-    let data_atribute = "div[data='MIG']";
+    let data_atribute = "*[data='MIG']";
     let res_data_atribute = data_atribute.replace("MIG", partial);
     let file = document.querySelector(res_data_atribute);
 
