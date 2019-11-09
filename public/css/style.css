@@ -406,24 +406,26 @@ a.button, input.button {
   a.button:focus, input.button:focus {
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  a.button--solid, input.button--solid {
+  a.button--solid, a.button--pill-solid, input.button--solid, input.button--pill-solid {
     background-color: #EF5350;
     color: #fff; }
-    a.button--solid:hover, a.button--solid:active, input.button--solid:hover, input.button--solid:active {
+    a.button--solid:hover, a.button--pill-solid:hover, a.button--solid:active, a.button--pill-solid:active, input.button--solid:hover, input.button--pill-solid:hover, input.button--solid:active, input.button--pill-solid:active {
       background-color: #fff;
       color: #EF5350; }
-    a.button--solid:active, input.button--solid:active {
+    a.button--solid:active, a.button--pill-solid:active, input.button--solid:active, input.button--pill-solid:active {
       background-color: #FFCDD2; }
-  a.button--solid-dark, input.button--solid-dark {
+  a.button--solid-dark, a.button--pill-solid-dark, input.button--solid-dark, input.button--pill-solid-dark {
     background-color: #B71C1C;
     color: #fff; }
-    a.button--solid-dark:hover, a.button--solid-dark:active, input.button--solid-dark:hover, input.button--solid-dark:active {
+    a.button--solid-dark:hover, a.button--pill-solid-dark:hover, a.button--solid-dark:active, a.button--pill-solid-dark:active, input.button--solid-dark:hover, input.button--pill-solid-dark:hover, input.button--solid-dark:active, input.button--pill-solid-dark:active {
       background-color: #fff;
       color: #B71C1C; }
-    a.button--solid-dark:active, input.button--solid-dark:active {
+    a.button--solid-dark:active, a.button--pill-solid-dark:active, input.button--solid-dark:active, input.button--pill-solid-dark:active {
       background-color: #FFCDD2; }
-  a.button--small, input.button--small {
+  a.button--small, a.button--pill-small, input.button--small, input.button--pill-small {
     padding: 4.60601px 9.21202px; }
+  a.button--pill, a.button--pill-solid, a.button--pill-solid-dark, a.button--pill-small, input.button--pill, input.button--pill-solid, input.button--pill-solid-dark, input.button--pill-small {
+    border-radius: 25rem; }
 
 .card {
   background-color: #E0E0E0;

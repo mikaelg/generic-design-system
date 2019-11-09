@@ -63,6 +63,25 @@ a.button, input.button {
   &--small {
     padding: $ver-space--xsmall/2 $hor-space--xsmall/2;
   }
+
+  &--pill {
+    border-radius: 25rem;
+  }
+
+  &--pill-solid {
+    @extend .button--solid;
+    @extend .button--pill;
+  }
+
+  &--pill-solid-dark {
+    @extend .button--solid-dark;
+    @extend .button--pill;
+  }
+
+  &--pill-small {
+    @extend .button--small;
+    @extend .button--pill;
+  }
 }
 
 
