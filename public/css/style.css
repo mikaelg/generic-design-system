@@ -433,7 +433,8 @@ a.button, input.button {
   display: flex;
   flex-direction: column; }
   .card__main {
-    padding: 2rem; }
+    padding: 2rem;
+    text-align: initial; }
   .card__image {
     width: 100%;
     border-radius: 1rem 1rem 0 0; }
@@ -631,6 +632,30 @@ a.button, input.button {
 
 .column {
   margin-bottom: 26px; }
+
+.parallax__image, .parallax__image-1, .parallax__image-2 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50rem; }
+
+.parallax__image-1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://live.staticflickr.com/857/43826251341_486822eff8_h.jpg"); }
+
+.parallax__image-2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://live.staticflickr.com/522/19608463663_3968d9806b_h.jpg"); }
+
+.parallax__inner {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; }
 
 #bgr_logo {
   position: fixed;

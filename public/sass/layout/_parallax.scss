@@ -1,0 +1,35 @@
+.parallax {
+  &__image {
+    position: relative;
+    background-color:rgba($color-white, 0.5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 50rem;
+
+  }
+
+  &__image-1 {
+    @extend .parallax__image;
+    background-image: linear-gradient(rgba($color-white,0.7),rgba($color-white,0.7)), url("https://live.staticflickr.com/857/43826251341_486822eff8_h.jpg");
+  }
+
+  &__image-2 {
+    @extend .parallax__image;
+    background-image: linear-gradient(rgba($color-white,0.7),rgba($color-white,0.7)), url("https://live.staticflickr.com/522/19608463663_3968d9806b_h.jpg");
+  }
+
+  &__inner {
+    position: absolute;
+    @include center-hor-vert;
+
+    width: 100%;
+    text-align: center;
+    
+  }
+
+}
+
+
