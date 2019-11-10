@@ -1,14 +1,9 @@
 TODO
 ********************
 
-1/ split design system pages
-- index
-- typography / buttons
-- collumns
-- cards
-
-2/ Form elements
-3/ paralax
+1/ Form elements
+2/ paralax images
+3/ animation
 
 
 DEBUG
@@ -17,3 +12,4 @@ DEBUG
 1/ IE debug cards
 2/ restructure basis a
 3/ inline-block whitespace bug
+4/ mobile bottom footer
