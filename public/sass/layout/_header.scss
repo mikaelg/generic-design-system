@@ -104,6 +104,7 @@
     
     &__logo {
         width: 5rem;
+        animation: branding 20s ease-in-out infinite;
     
         .cls-1 {
             fill: $color-primary;

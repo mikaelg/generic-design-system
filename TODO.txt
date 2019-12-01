@@ -2,8 +2,10 @@ TODO
 ********************
 
 1/ Form elements
-2/ paralax images
-3/ animation
+2/ animation
+3/ SVG
+4/ to top component
+5/ paralax images
 
 
 DEBUG
@@ -13,3 +15,4 @@ DEBUG
 2/ restructure basis a
 3/ inline-block whitespace bug
 4/ mobile bottom footer
+5/ restructure buttons basis

@@ -19,6 +19,7 @@
   &__image-2 {
     @extend .parallax__image;
     background-image: linear-gradient(rgba($color-white,0.7),rgba($color-white,0.7)), url("https://live.staticflickr.com/522/19608463663_3968d9806b_h.jpg");
+    min-height: 100vh;
   }
 
   &__inner {

@@ -7,6 +7,75 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     //navbutton();
 
+    // partial classname to search for
+    var _showOnScroll = 'show-on-scroll__';
+    
+    // Detect request animation frame
+    var scroll = window.requestAnimationFrame ||
+        // IE Fallback
+        function(callback){ window.setTimeout(callback, 1000/60)};
+    
+    // find classes that contains _showOnScroll
+    var elementsToShow = document.querySelectorAll(`[class*="show-on-scroll__"]`); 
+    //console.log(elementsToShow);
+
+    // Call the loop for the first time
+    loop(scroll, elementsToShow);
+    //console.log("loop started");
+
+    function loop() {
+        elementsToShow.forEach(function (element) {
+            if (isElementInViewport(element)) {
+                //element.classList.add('animation--moveinleft');
+                extractAnnimationClassname(element, 'add');
+            } else {
+                //element.classList.remove('animation--moveinleft');
+                extractAnnimationClassname(element, 'remove');
+            }
+        });
+        
+        scroll(loop);
+    }
+    
+    //Helper functin: extract annimation classname
+    // action: add, remove
+    function extractAnnimationClassname(_element, _action) {
+        var _class = null;
+        var _classIterator = _element.classList.values();
+        for(var _value of _classIterator) {
+            if(_value.includes(_showOnScroll)){
+                var _r = _value.replace(_showOnScroll,'');
+                if(_action == 'add') {
+                    _element.classList.add(_r);
+                } else {
+                    _element.classList.remove(_r);
+                }
+                
+            }
+            
+        }
+    }
+    
+    // Helper function from: http://stackoverflow.com/a/7557433/274826
+    function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+            (rect.top <= 0
+            && rect.bottom >= 0)
+            ||
+            (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+            ||
+            (rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        );
+    }
+    
+
 });
 
 const  partials = (partial, addfunction=null) => {
@@ -52,4 +121,6 @@ const navbutton = () => {
         navigation.classList.toggle('open');
     } 
 }
+
+
 
