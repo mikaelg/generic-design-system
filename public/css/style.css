@@ -662,8 +662,13 @@ a.button, input.button {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .navigation > ul {
+    opacity: 0;
+    transition: opacity ease-in .2s; }
   .navigation.open {
     width: 100%; }
+    .navigation.open > ul {
+      opacity: 1; }
 
 .column {
   margin-bottom: 26px; }
