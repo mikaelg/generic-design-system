@@ -462,9 +462,15 @@ a.button, input.button {
   .card__main {
     padding: 2rem;
     text-align: initial; }
-  .card__image {
-    width: 100%;
+  .card__visual {
+    display: flex;
+    overflow: hidden;
     border-radius: 1rem 1rem 0 0; }
+  .card__image {
+    width: 100%; }
+    .card__image-hover--zoom, .card__image-hover--rotate, .card__image-hover--move-hor {
+      transition: .3s ease-out;
+      opacity: .8; }
   .card__bottom {
     display: flex;
     justify-content: center;
@@ -478,6 +484,15 @@ a.button, input.button {
   .card:hover {
     background-color: #dbdbdb;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19); }
+  .card:hover .card__image-hover--zoom {
+    transform: scale(1.2);
+    opacity: 1; }
+  .card:hover .card__image-hover--rotate {
+    transform: scale(1.5) rotate(10deg);
+    opacity: 1; }
+  .card:hover .card__image-hover--move-hor {
+    transform: scale(1.7) translateX(20%);
+    opacity: 1; }
 
 .form__element {
   border: 1px solid #757575;
