@@ -68,3 +68,6 @@
 @mixin shadow {
   box-shadow: 0 4px 8px 0 rgba($color-black, 0.2), 0 6px 20px 0 rgba($color-black, 0.19);
 }
+@mixin shadow--hover {
+  box-shadow: 0 8px 12px 0 rgba($color-black, 0.2), 0 10px 24px 0 rgba($color-black, 0.19);
+}

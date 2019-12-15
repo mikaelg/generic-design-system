@@ -12,6 +12,7 @@ DEBUG
 ******************
 
 1/ IE debug cards
+1.1/ debug 4column cards > breakpoint 811px
 2/ restructure basis a
 3/ inline-block whitespace bug
 4/ mobile bottom footer

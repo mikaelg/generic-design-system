@@ -4,6 +4,7 @@
     border-radius: 1rem;
 
     @include shadow;
+    transition: .3s;
     height: 100%;
 
     display: flex;
@@ -35,6 +36,11 @@
         > a {
             margin-left: 1rem;
         }
+    }
+
+    &:hover {
+        background-color: darken($color-grey-light, 2%);
+        @include shadow--hover;
     }
 }
 
